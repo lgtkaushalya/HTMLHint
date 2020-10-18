@@ -19,7 +19,7 @@ export default {
         if (dataObject.reactComponents !== undefined
           && dataObject.reactComponents.includes(matchingComponentName)) {
           reporter.error(
-            'Replace angular '+ tagName +' directive with react' + tagName + '-component',
+            'Replace angular '+ tagName +' directive with react ' + tagName + '-component',
             event.line,
             event.col,
             this,
