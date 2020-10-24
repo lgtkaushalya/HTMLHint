@@ -17,7 +17,7 @@ export default {
         const fileData = fs.readFileSync(dataFilePath, 'utf8');
         const dataObject = JSON.parse(fileData);
         if (dataObject.reactComponents !== undefined
-          && dataObject.reactComponents.includes(matchingComponentName)) {
+          && Object.keys(dataObject.reactComponents).includes(matchingComponentName)) {
           reporter.error(
             'Replace angular '+ tagName +' directive with react ' + tagName + '-component',
             event.line,
