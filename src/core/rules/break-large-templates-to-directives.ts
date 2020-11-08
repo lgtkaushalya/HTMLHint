@@ -5,7 +5,7 @@ export default {
   description: 'Large templates tend to have mixed responsibilities',
   init(parser, reporter) {
     parser.addListener('end', (event) => {
-      if (event.line > 100) {
+      if (event.line > 200) {
         reporter.error(
           'Break large templates into directives',
           event.line,

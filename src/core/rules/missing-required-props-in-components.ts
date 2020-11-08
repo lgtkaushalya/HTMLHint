@@ -25,7 +25,7 @@ export default {
           for (let i = 0, l = attrs.length; i < l; i++) {
             let attr = attrs[i]
             const attrName = attr.name.charAt(0) + _.camelCase(attr.name.slice(1));
-            console.log(attrName)
+            //console.log(attrName)
             attrNameArray.push(attrName);
           }
 
